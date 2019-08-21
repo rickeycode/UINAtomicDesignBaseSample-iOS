@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="MLCContentTitleCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="198" id="GF9-Rf-sRT" customClass="MLCContentTitleCell" customModule="UINAtomicDesignBaseSample" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="198"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="TableViewCell" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GF9-Rf-sRT" id="8T1-c2-ZfH">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="197.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qYz-4v-8fd" customClass="MLCContentTitle" customModule="AtomicUIModules">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="197.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="2" id="ZIu-Cp-NeO"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="qYz-4v-8fd" firstAttribute="leading" secondItem="8T1-c2-ZfH" secondAttribute="leading" id="Rj8-CR-b9T"/>
+                    <constraint firstAttribute="bottom" secondItem="qYz-4v-8fd" secondAttribute="bottom" id="f2V-Yc-Rax"/>
+                    <constraint firstItem="qYz-4v-8fd" firstAttribute="top" secondItem="8T1-c2-ZfH" secondAttribute="top" id="uKg-az-ace"/>
+                    <constraint firstAttribute="trailing" secondItem="qYz-4v-8fd" secondAttribute="trailing" id="yNb-hZ-d23"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="mlcContentTitle" destination="qYz-4v-8fd" id="117-iQ-iJ6"/>
+            </connections>
+            <point key="canvasLocation" x="-407.19999999999999" y="23.388305847076463"/>
+        </tableViewCell>
+    </objects>
+</document>
